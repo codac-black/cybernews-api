@@ -30,9 +30,8 @@ app.add_middleware(
 # init the CyberNewsFeed
 feed = CyberNewsFeed()
 
-
-@app.get("/news")
 @limiter.limit("5/minute")
+@app.get("/news")
 def get_news():
     # Get latest cyber news articles
     articles=[]
