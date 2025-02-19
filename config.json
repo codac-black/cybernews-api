@@ -1,0 +1,23 @@
+{
+    "sources": [
+        {
+            "name": "BleepingComputer",
+            "url": "https://www.bleepingcomputer.com/news/security/",
+            "article_selector": "li:has(div.bc_latest_news_text)",
+            "title_selector": "h4 a",
+            "category_selector": "div.bc_latest_news_category a",
+            "description_selector": "p",
+            "author_selector": "li.bc_news_author a",
+            "date_selector": "li.bc_news_date",
+            "exclude_sponsored": true,
+            "link_prefix": "https://www.bleepingcomputer.com"
+        }
+    ],
+    "max_articles": 20,
+    "check_interval": 300,
+    "retention_days": 7,
+    "discord": {
+        "embed_color": 5814783,
+        "footer_text": "Cyber Security News Feed"
+    }
+}
